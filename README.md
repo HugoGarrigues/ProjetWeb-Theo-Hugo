@@ -1,1 +1,1 @@
-# ProjetWeb-Th-o-Hugo
+# ProjetWeb-Theo-Hugo
