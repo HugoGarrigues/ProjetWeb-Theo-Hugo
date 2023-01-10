@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PoiretOne-Regular';
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: rgb(143, 137, 137);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 0, 0);
+}
+
+
+@font-face {
+    font-family: "PoiretOne-Regular";
+    src: url(../Police/PoiretOne-Regular.ttf);
+} 
+
+body{
+    overflow-y: hidden;
+}
+
+nav{
+    background-color: #000;
+    height: 80px;
+    width: 100%;
+    z-index: 99;
+    position: fixed;
+}
+
+nav ul li a{
+    text-decoration: none;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+nav ul li{
+    padding: 0 20px;
+}
+
+nav ul li a{
+    color: #fff;
+    font-size: 18px;
+    margin-left: 40px;
+    font-weight: 500;
+}
+
+nav ul li a:hover{
+    color: #f00;
+}
+
+.propos{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    position: absolute;
+    right: 20px;
+}
+
+.container{
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.containerPortfolio{
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    border-bottom: #000 1px solid; 
+    justify-content: center;
+    height: 100vh;
+    scroll-snap-align: center;
+    background-color: gray;
+    background-size: cover;
+    background-position: center;
+}
+
+.containerPortrait{
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    border-bottom: #000 1px solid; 
+    height: 100vh;
+    scroll-snap-align: center;
+    background-image: url("../Images/japon.jpg");
+    background-size: cover;
+    background-position: center;
+    justify-content: space-evenly;
+}
+
+.containerArgentique{
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    border-bottom: #000 1px solid; 
+    justify-content: center;
+    height: 100vh;
+    scroll-snap-align: center;
+    background-image: url("../Images/allemagne.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.containerNumerique{
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    border-bottom: #000 1px solid; 
+    justify-content: center;
+    height: 100vh;
+    scroll-snap-align: center;
+    background-image: url("../Images/italie.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+.portrait1{
+    background-image: url("../Images/r34.jpg");
+    height: 300px;
+    width: 400px;
+    border-radius: 2rem;
+}
+
+.portrait1:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.portrait1:not(:hover){
+    transition: 0.5s;
+}
+
+.portrait2{
+    background-image: url("../Images/silvia.jpg");
+    height: 300px;
+    width: 400px;
+    border-radius: 2rem;
+}
+
+.portrait2:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.portrait2:not(:hover){
+    transition: 0.5s;
+}
+
+.portrait3{
+    background-image: url("../Images/supra.jpg");
+    height: 300px;
+    width: 400px;
+    border-radius: 2rem;
+}
+
+.portrait3:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.portrait3:not(:hover){
+    transition: 0.5s;
+    
+}
+
+/* carousel */
+
+.slider{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 60vh;
+    margin-top: 10vh;
+  }
+  
+  .slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+  }
+  
+  .slides input{
+    display: none;
+  }
+  
+  .slide{
+    width: 20%;
+    transition: 2s;
+  }
+  
+  .slide img{
+    width: 800px;
+    height: 500px;
+  }
+  
+  .navigation-mannual{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .mannual-btn{
+    border: 2px solid #ccc;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  .mannual-btn:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  .mannual-btn:hover{
+    background-color: #ccc;
+  }
+  
+  #radio1:checked ~ .first{
+    margin-left: 0;
+  }
+  
+  #radio2:checked ~ .first{
+    margin-left: -20%;
+  }
+  
+  #radio3:checked ~ .first{
+    margin-left: -40%;
+  }
+  
+  #radio4:checked ~ .first{
+    margin-left: -60%;
+  }
+  
+  /* Automatic Navigation */
+  .navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+  }
+  
+  .navigation-auto div{
+    border: 2px solid #333;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+  }
+  
+  .navigation-auto div:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  #radio1:checked ~.navigation-auto .auto-btn-1{
+    background: #ccc;
+  }
+  
+  #radio2:checked ~.navigation-auto .auto-btn-2{
+    background: #ccc;
+  }
+  
+  
+  #radio3:checked ~.navigation-auto .auto-btn-3{
+    background: #ccc;
+  }
+  
+  #radio4:checked ~.navigation-auto .auto-btn-4{
+    background: #ccc;
+  }
+  
+  
+  
+  
+  

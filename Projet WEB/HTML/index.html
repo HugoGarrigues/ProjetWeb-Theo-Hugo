@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li ><a href="#portrait">Portrait</a></li>
+            <li ><a href="#argentique">Argentique</a></li>
+            <li ><a href="#numerique">Numérique</a></li>
+            <li ><a href="#infos">a Propos</a></li>
+            <p class="propos">Théo Colliot-Martinez</p>
+        </ul> 
+    </nav>
+    <div class="container">
+        <div class="containerPortfolio">
+            <div class="partieGauche">dfherh</div>
+            <div class="partieDroite">
+                  <div class="slider">
+    <div class="slides">
+      <input type="radio" name="radio-btn" id="radio1">
+      <input type="radio" name="radio-btn" id="radio2">
+      <input type="radio" name="radio-btn" id="radio3">
+      <input type="radio" name="radio-btn" id="radio4">
+      <div class="slide first">
+        <img src="../Images/allemagne.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="../Images/france.jpeg" alt="">
+      </div>
+      <div class="slide">
+        <img src="../Images/italie.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="../Images/japon.jpg">
+      </div>
+      <div class="navigation-auto">
+        <div class="auto-btn-1"></div>
+        <div class="auto-btn-2"></div>
+        <div class="auto-btn-3"></div>
+        <div class="auto-btn-4"></div>
+      </div>
+    </div>
+      <div class="navigation-mannual">
+        <label for="radio1" class="mannual-btn"></label>
+        <label for="radio2" class="mannual-btn"></label>
+        <label for="radio3" class="mannual-btn"></label>
+        <label for="radio4" class="mannual-btn"></label>
+      </div>
+  </div>
+            </div>
+        </div>
+        <div class="containerPortrait" id="portrait">
+            <a href="r34.html">
+            <div class="portrait1"></div>
+            </a>
+            <a href="r34.html">
+                <div class="portrait2"></div>
+                </a>
+                <a href="r34.html">
+                    <div class="portrait3"></div>
+                    </a>
+        </div>
+        <div class="containerArgentique">
+            <div class="argentique1"></div>
+            <div class="argentique2"></div>
+            <div class="argentique3"></div>
+        </div>
+        <div class="containerNumerique">
+            <div class="numerique1"></div>
+            <div class="numerique2"></div>
+            <div class="numerique3"></div>
+        </div>
+    </div>
+      <script>
+    var counter = 1;
+    setInterval(function()  {
+      document.getElementById('radio'+ counter).checked = true;
+      counter++; 
+
+      if(counter>4){
+        counter=1
+      }
+
+    }, 3000);
+  </script>
+</body>
+</html>
