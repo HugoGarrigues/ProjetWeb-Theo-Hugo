@@ -5,6 +5,8 @@
     font-family: 'PoiretOne-Regular';
 }
 
+/* Scrollbar */
+
 ::-webkit-scrollbar {
     width: 12px;
     background-color: rgb(143, 137, 137);
@@ -14,6 +16,7 @@
     background-color: rgb(0, 0, 0);
 }
 
+/* Police */
 
 @font-face {
     font-family: "PoiretOne-Regular";
@@ -26,7 +29,7 @@ body{
 
 nav{
     background-color: #000;
-    height: 80px;
+    height: 85px;
     width: 100%;
     z-index: 99;
     position: fixed;
@@ -49,21 +52,30 @@ nav ul li{
 
 nav ul li a{
     color: #fff;
-    font-size: 18px;
+    font-size: 20px;
     margin-left: 40px;
     font-weight: 500;
 }
 
 nav ul li a:hover{
-    color: #f00;
+    color: rgb(56, 138, 80);
 }
 
 .propos{
     color: #fff;
-    font-size: 18px;
+    font-size: 29px;
     font-weight: 500;
     position: absolute;
-    right: 20px;
+    right: 3%;
+}
+
+.description{
+    font-size: 30px;
+    font-weight: 590;
+}
+
+.texte{
+  text-align: center;
 }
 
 .container{
@@ -80,7 +92,7 @@ nav ul li a:hover{
     justify-content: center;
     height: 100vh;
     scroll-snap-align: center;
-    background-color: gray;
+    background-color: rgb(201, 199, 199);
     background-size: cover;
     background-position: center;
 }
@@ -88,7 +100,6 @@ nav ul li a:hover{
 .containerPortrait{
     font-size: 50px;
     display: flex;
-    align-items: center;
     border-bottom: #000 1px solid; 
     height: 100vh;
     scroll-snap-align: center;
@@ -96,6 +107,7 @@ nav ul li a:hover{
     background-size: cover;
     background-position: center;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .containerArgentique{
@@ -124,72 +136,80 @@ nav ul li a:hover{
     background-position: center;
 }
 
-
 .portrait1{
-    background-image: url("../Images/r34.jpg");
-    height: 300px;
-    width: 400px;
-    border-radius: 2rem;
+  background-image: url("../Images/r34.jpg");
+  height: 300px;
+  width: 400px;
+  border-radius: 2rem;
+  margin-top: 10vh;
 }
 
 .portrait1:hover{
-    transform: scale(1.1);
-    transition: 0.5s;
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 
 .portrait1:not(:hover){
-    transition: 0.5s;
+  transition: 0.5s;
 }
 
 .portrait2{
-    background-image: url("../Images/silvia.jpg");
-    height: 300px;
-    width: 400px;
-    border-radius: 2rem;
+  background-image: url("../Images/rx7.jpg");
+  height: 300px;
+  width: 400px;
+  border-radius: 2rem;
+  margin-top: 10vh;
 }
 
 .portrait2:hover{
-    transform: scale(1.1);
-    transition: 0.5s;
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 
 .portrait2:not(:hover){
-    transition: 0.5s;
+  transition: 0.5s;
 }
 
 .portrait3{
-    background-image: url("../Images/supra.jpg");
-    height: 300px;
-    width: 400px;
-    border-radius: 2rem;
+  background-image: url("../Images/s15.jpg");
+  height: 300px;
+  width: 400px;
+  border-radius: 2rem;
+  margin-top: 10vh;
 }
 
 .portrait3:hover{
-    transform: scale(1.1);
-    transition: 0.5s;
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 
 .portrait3:not(:hover){
-    transition: 0.5s;
-    
-}
+  transition: 0.5s;
 
+}
 /* carousel */
 
-.slider{
+.slider1{
     width: 800px;
     height: 500px;
     border-radius: 10px;
     overflow: hidden;
-    margin-left: 60vh;
-    margin-top: 10vh;
+    margin-left: 15vh;
+  }
+
+  .slider2{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 15vh;
   }
   
-  .slides{
-    width: 500%;
-    height: 500px;
-    display: flex;
-  }
+.slides{
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
   
   .slides input{
     display: none;
@@ -206,7 +226,6 @@ nav ul li a:hover{
   }
   
   .navigation-mannual{
-    position: absolute;
     width: 800px;
     margin-top: -40px;
     display: flex;
@@ -245,9 +264,7 @@ nav ul li a:hover{
     margin-left: -60%;
   }
   
-  /* Automatic Navigation */
   .navigation-auto{
-    position: absolute;
     display: flex;
     width: 800px;
     justify-content: center;
@@ -282,7 +299,8 @@ nav ul li a:hover{
     background: #ccc;
   }
   
-  
-  
+  /* carousel */
+
+
   
   
