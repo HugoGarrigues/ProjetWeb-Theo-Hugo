@@ -84,7 +84,7 @@ nav ul li a:hover{
     scroll-snap-type: y mandatory;
 }
 
-.containerPortfolio{
+.accueil{
     font-size: 50px;
     display: flex;
     align-items: center;
@@ -123,17 +123,18 @@ nav ul li a:hover{
     background-position: center;
 }
 
-.containerNumerique{
-    font-size: 50px;
-    display: flex;
-    align-items: center;
-    border-bottom: #000 1px solid; 
-    justify-content: center;
-    height: 100vh;
-    scroll-snap-align: center;
+.containerFrance{
+  font-size: 50px;
+  display: flex;
+  border-bottom: #000 1px solid; 
+  height: 100vh;
+  scroll-snap-align: center;
+  background-image: url("../Images/japon.jpg");
+  background-size: cover;
+  background-position: center;
+  justify-content: space-evenly;
+  align-items: center;
     background-image: url("../Images/italie.jpg");
-    background-size: cover;
-    background-position: center;
 }
 
 .portrait1{
@@ -142,6 +143,7 @@ nav ul li a:hover{
   width: 400px;
   border-radius: 2rem;
   margin-top: 10vh;
+  overflow-y: hidden;
 }
 
 .portrait1:hover{
@@ -159,6 +161,7 @@ nav ul li a:hover{
   width: 400px;
   border-radius: 2rem;
   margin-top: 10vh;
+  background-position: 53% 55%;
 }
 
 .portrait2:hover{
@@ -185,8 +188,60 @@ nav ul li a:hover{
 
 .portrait3:not(:hover){
   transition: 0.5s;
-
 }
+
+.france1{
+  background-image: url("../Images/alpine.jpg");
+  height: 300px;
+  width: 400px;
+  border-radius: 2rem;
+  margin-top: 10vh;
+}
+
+.france1:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.france1:not(:hover){
+  transition: 0.5s;
+}
+
+.france2{
+  background-image: url("../Images/alpine2.jpg");
+  height: 300px;
+  width: 400px;
+  border-radius: 2rem;
+  margin-top: 10vh;
+}
+
+.france2:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.france2:not(:hover){
+  transition: 0.5s;
+}
+
+.france3{
+  background-image: url("../Images/t16.jpg");
+  height: 300px;
+  width: 400px;
+  border-radius: 2rem;
+  margin-top: 10vh;
+  background-position: 30% 10%;
+}
+
+.france3:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.france3:not(:hover){
+  transition: 0.5s;
+}
+
 /* carousel */
 
 .slider1{
