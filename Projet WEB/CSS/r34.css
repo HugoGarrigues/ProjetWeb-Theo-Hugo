@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PoiretOne-Regular';
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: rgb(143, 137, 137);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 0, 0);
+}
+
+/* Police */
+
+@font-face {
+    font-family: "PoiretOne-Regular";
+    src: url(../Police/PoiretOne-Regular.ttf);
+} 
+
+body{
+    overflow-y: hidden;
+}
+
+nav{
+    background-color: #000;
+    height: 85px;
+    width: 100%;
+    z-index: 99;
+    position: fixed;
+}
+
+nav ul li a{
+    text-decoration: none;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+nav ul li{
+    padding: 0 20px;
+}
+
+nav ul li a{
+    color: #fff;
+    font-size: 20px;
+    margin-left: 40px;
+    font-weight: 500;
+}
+
+nav ul li a:hover{
+    color: rgb(56, 138, 80);
+}
+
+.propos{
+    color: #fff;
+    font-size: 29px;
+    font-weight: 500;
+    position: absolute;
+    right: 3%;
+}
+
+.container{
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.histoire{
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    scroll-snap-align: center;
+    background-color: rgb(201, 199, 199);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.texteHistoire{
+    font-size: 30px;
+    font-weight: 590;
+}
+
+.titre{
+    text-align: center;
+}
+
+.description{
+    font-size: 30px;
+    font-weight: 590;
+    text-align: center;
+}
+
+.caracteristiques{
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  scroll-snap-align: center;
+  background-color: rgb(201, 199, 199);
+  background-size: cover;
+  background-position: center;
+}
+
+.gallerie{
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  scroll-snap-align: center;
+  background-color: rgb(201, 199, 199);
+  background-size: cover;
+  background-position: center;
+}
+
+.slider1{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 15vh;
+  }
+  
+.slides{
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
+  
+  .slides input{
+    display: none;
+  }
+  
+  .slide{
+    width: 20%;
+    transition: 2s;
+  }
+  
+  .slide img{
+    width: 800px;
+    height: 500px;
+  }
+  
+  .navigation-mannual{
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .mannual-btn{
+    border: 2px solid #ccc;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  .mannual-btn:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  .mannual-btn:hover{
+    background-color: #ccc;
+  }
+  
+  #radio1:checked ~ .first{
+    margin-left: 0;
+  }
+  
+  #radio2:checked ~ .first{
+    margin-left: -20%;
+  }
+  
+  #radio3:checked ~ .first{
+    margin-left: -40%;
+  }
+  
+  #radio4:checked ~ .first{
+    margin-left: -60%;
+  }
+  
+  .navigation-auto{
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+  }
+  
+  .navigation-auto div{
+    border: 2px solid #333;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+  }
+  
+  .navigation-auto div:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  #radio1:checked ~.navigation-auto .auto-btn-1{
+    background: #ccc;
+  }
+  
+  #radio2:checked ~.navigation-auto .auto-btn-2{
+    background: #ccc;
+  }
+  
+  
+  #radio3:checked ~.navigation-auto .auto-btn-3{
+    background: #ccc;
+  }
+  
+  #radio4:checked ~.navigation-auto .auto-btn-4{
+    background: #ccc;
+  }
+
+  .cadre {
+    display: flex;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 2rem;
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+    margin-right: 50px;
+  }
+
+  .img{
+    border-radius: 0.8rem;
+  }
+
+  .description2{
+    font-size: 30px;
+    font-weight: 500;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/r34.css">
+  <title>S15</title>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li ><a href="index.html">Accueil</a></li>
+      <li ><a href="#histoire">Histoire</a></li>
+      <li ><a href="#caracteristiques">Caractèristiques</a></li>
+      <p class="propos">CountryCars</p>
+    </ul> 
+  </nav>
+  <div class="container">
+    <div class="histoire" id="histoire">
+      <div class="texte">
+        <p class="titre">Nissan Skyline GT-R R34</p>
+        <p class="description">La Nissan Skyline GT-R R34 a été produite <br>
+          entre 1999 et 2002. Elle est devenue célèbre pour sa puissance et <br>
+          sa performance exceptionnelles, ainsi que pour sa présence dans de <br>
+          nombreux films et jeux vidéo populaires. La R34 était équipée d'un <br>
+          moteur V6 de 2,6 litres qui développait 280 chevaux, et était capable<br>
+           d'atteindre une vitesse maximale de 260 km/h. Elle était également <br>
+           équipée d'un système de transmission intégral pour une meilleure <br>
+           adhérence et une meilleure maniabilité. En raison de sa popularité,<br>
+            la R34 est devenue un véhicule très recherché auprès des <br>
+            collectionneurs et des amateurs de voitures de sport. 
+            <br> ⇩</p>
+          </div>
+            <div class="slider1">
+              <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <div class="slide first">
+                  <img src="../Images/allemagne2.jpg" alt="">
+                </div>
+                <div class="slide">
+                  <img src="../Images/france2.jpg" alt="">
+                </div>
+                <div class="slide">
+                  <img src="../Images/italie2.jpg" alt="">
+                </div>
+                <div class="slide">
+                  <img src="../Images/japon2.jpg">
+                </div>
+    </div>
+    </div>
+  </div>
+    <div class="caracteristiques" id="caracteristiques">
+      <section class="container2">
+          <div class="cadre">
+            <img class="img" src="../Images/190e.jpg"/> 
+          </div>
+      </section>
+      <div class="texte">
+        <p class="titre">Caractèristiques</p>
+        <p class="description2">
+          - Moteur: 6 cylindres en ligne de 2,6 litres (RB26DETT) <br>
+          - Puissance: 280 chevaux à 6800 tr/min <br>
+          - Couple: 293 lb-ft à 4400 tr/min <br>
+          - Vitesse maximale: 260 km/h <br>
+          - Poids: 1.430 kg <br>
+        </p>
+        </div>
+    </div>
+  </div>
+  <script>
+    var counter = 1;
+    setInterval(function()  {
+      document.getElementById('radio'+ counter).checked = true;
+      counter++; 
+
+      if(counter>4){
+        counter=1
+      }
+
+    }, 2700);
+  </script>
+</body>
+</html>
