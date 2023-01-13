@@ -611,3 +611,30 @@ nav ul li a:hover{
       font-weight: 600;
       font-size: 90px;
     }
+
+    .photo1:hover{
+      transform: scale(1.1);
+      transition: 0.5s;
+    }
+
+    .photo1:not(:hover){
+      transition: 0.5s;
+    }
+
+    .photo2:not(:hover){
+      transition: 0.5s;
+    }
+
+    .photo2:hover{
+      transform: scale(1.1);
+      transition: 0.5s;
+    }
+
+    .photo3:hover{
+      transform: scale(1.1);
+      transition: 0.5s;
+    }
+
+    .photo3:not(:hover){
+      transition: 0.5s;
+    }
