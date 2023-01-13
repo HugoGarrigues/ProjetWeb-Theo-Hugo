@@ -240,6 +240,8 @@ nav ul li a:hover{
 
   .img{
     border-radius: 0.8rem;
+    width: 800px;
+    height: 500px;
   }
 
   .description2{
