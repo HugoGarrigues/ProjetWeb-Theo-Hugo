@@ -93,6 +93,12 @@ nav ul li a:hover{
     font-weight: 590;
 }
 
+.texte{
+  height: 40%;
+  width: 40%;
+  margin-bottom: 25vh;
+}
+
 .titre{
     text-align: center;
 }
