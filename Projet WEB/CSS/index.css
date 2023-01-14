@@ -115,7 +115,7 @@ nav ul li a:hover{
   background-size: cover;
   background-position: center;
 }
-.containerPortrait{
+.containerJapon{
     font-size: 50px;
     display: flex;
     border-bottom: #000 1px solid; 
@@ -128,7 +128,7 @@ nav ul li a:hover{
     align-items: center;
 }
 
-.containerFrance{
+.containerItalie{
   font-size: 50px;
   display: flex;
   border-bottom: #000 1px solid; 
@@ -141,7 +141,7 @@ nav ul li a:hover{
   background-image: url("../Images/france.jpg");
 }
 
-.portrait1{
+.japon1{
   height: 300px;
   width: 400px;
   border-radius: 2rem;
@@ -150,16 +150,16 @@ nav ul li a:hover{
   overflow-x: hidden;
 }
 
-.portrait1:hover{
+.japon1:hover{
   transform: scale(1.1);
   transition: 0.5s;
 }
 
-.portrait1:not(:hover){
+.japon1:not(:hover){
   transition: 0.5s;
 }
 
-.portrait1 .text {
+.japon1 .text {
   display: none;
   position: absolute;
   top: 50%;
@@ -168,14 +168,14 @@ nav ul li a:hover{
   text-align: center;
 }
 
-.portrait1:hover .text {
+.japon1:hover .text {
   display: block;
   color: white;
   font-weight: 600;
   font-size: 90px;
 }
 
-.portrait2{
+.japon2{
   background-image: url("../Images/rx7.jpg");
   height: 300px;
   width: 400px;
@@ -185,16 +185,16 @@ nav ul li a:hover{
   overflow-x: hidden;
 }
 
-.portrait2:hover{
+.japon2:hover{
   transform: scale(1.1);
   transition: 0.5s;
 }
 
-.portrait2:not(:hover){
+.japon2:not(:hover){
   transition: 0.5s;
 }
 
-.portrait2 .text {
+.japon2 .text {
   display: none;
   position: absolute;
   top: 50%;
@@ -203,14 +203,14 @@ nav ul li a:hover{
   text-align: center;
 }
 
-.portrait2:hover .text {
+.japon2:hover .text {
   display: block;
   color: white;
   font-weight: 600;
   font-size: 90px;
 }
 
-.portrait3{
+.japon3{
   height: 300px;
   width: 400px;
   border-radius: 2rem;
@@ -219,16 +219,16 @@ nav ul li a:hover{
   overflow-x: hidden;
 }
 
-.portrait3:hover{
+.japon3:hover{
   transform: scale(1.1);
   transition: 0.5s;
 }
 
-.portrait3:not(:hover){
+.japon3:not(:hover){
   transition: 0.5s;
 }
 
-.portrait3 .text {
+.japon3 .text {
   display: none;
   position: absolute;
   top: 50%;
@@ -237,7 +237,7 @@ nav ul li a:hover{
   text-align: center;
 }
 
-.portrait3:hover .text {
+.japon3:hover .text {
   display: block;
   color: white;
   font-weight: 600;
