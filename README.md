@@ -1,6 +1,11 @@
-# ProjetWeb-Theo-Hugo
-Projet Hangman réalisé par Théo Colliot-Martinez et Hugo Garrigues(HugoGarrigues). Tout deux nous sommes étudiants en B1 Informatique a Ynov.
+# Country Cars
+Country Cars est un projet réalisé par Theo et Hugo, élèves en B1 informatique à Ynov. Ce site web a pour objectif de faire découvrir le monde de la voiture à ceux qui souhaitent s'y intéresser.
 
-Ce projet Web a été réalisé suite a la demande d'un site web qui devait parler d'un sujet que l'on choisissait au préalable. Nous avons donc décidé de travailler sur un site vitrine mettant en avant les photos réalisé par Théo Colliot-Martinez. 
+Notre site présente des informations détaillées sur les différents modèles de voitures, leur histoire, leur mécanique, et leur performance. Nous avons également inclus des photos pour une meilleure immersion dans le sujet.
 
-Ce projet a été commencé le 12 Décembre 2022 et a été finis le 15 Janvier 223. 
+Ce projet a été demandé par des clients et nous avons mis tout notre savoir-faire pour répondre à leurs attentes. Nous espérons que ce site web vous plaira et que vous y trouverez les informations que vous recherchez.
+
+# Technologie utilisées
+HTML
+CSS
+JavaScript
