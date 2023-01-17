@@ -8,14 +8,19 @@
   <title>Accueil</title>
 </head>
 <body>
-  <nav>
-    <ul>
-      <li ><a href="#accueil">Accueil</a></li>
-      <li ><a href="#japon">Japon</a></li>
-      <li ><a href="#allemagne">Allemagne</a></li>
-      <li ><a href="#italie">Italie</a></li>
-      <p class="propos">CountryCars</p>
-    </ul> 
+  <nav class="navbar dark-mode" role="navigation">  
+    <div class="logo-title">
+      <span>CountryCars</span>
+  </div> 
+    <ul class="navbar__links">
+      <li class="navbar__link first"><a class="Btn" href="#accueil.html">Accueil</a></li>
+      <li class="navbar__link second"><a class="Btn" href="#japon">Japon</a></li>
+      <li class="navbar__link third"><a class="Btn" href="#allemagne">Allemagne</a></li>
+      <li class="navbar__link four"><a class="Btn" href="#italie">Italie</a></li>
+    </ul>   
+    <button class="burger">
+      <span class="bar"></span>  
+    </button>   
   </nav>
   <div class="container">
     <div class="accueil" id="accueil">
@@ -51,7 +56,7 @@
 <div class="containerJapon" id="japon">
   <div class="japon1">
     <a href="r34.html">
-      <img src="../Images/r34.jpg" alt="">
+      <img class="photo12" src="../Images/r34.jpg" alt="">
       <span class="text">R-34</span>
     </a>
   </div>
@@ -125,5 +130,6 @@
 
     }, 2700);
   </script>
+  <script src="../JS/barre.js"></script>
 </body>
 </html>
