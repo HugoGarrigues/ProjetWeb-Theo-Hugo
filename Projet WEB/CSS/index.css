@@ -5,6 +5,64 @@
     font-family: 'PoiretOne-Regular';
 }
 
+ /* Navbar */
+ .logo-title {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  padding-right: 30px;
+  color: white ;
+  font-size: 32px ;
+}
+.navbar {  
+display:flex;
+align-items:center; 
+justify-content:flex-start;   
+padding:20px;
+font-size:1.1rem;
+background:var(--navbar-bg-color);
+color:var(--navbar-color);
+width: 100%;
+position: fixed;
+z-index: 99;
+}
+.navbar__links { 
+display:flex;  
+}
+.navbar__link { 
+padding:0 20px;
+margin-top: 1%;
+}
+.navbar__link > a { 
+color:var(--navbar-color);
+text-decoration:none;
+}
+.burger {
+display:none;
+}
+.Btn{
+font-size: 1.38rem;
+}
+
+/* Variables */
+:root {
+	--font-size:1rem;
+  }
+  .dark-mode {
+	--navbar-color: #FFF;
+	--navbar-bg-color: #000;  
+  }
+  
+  /* Reset */
+  ul {
+	list-style:none;
+  }
+  
+  .main-content {
+	padding:1rem;
+  }
+
 /* Scrollbar */
 
 ::-webkit-scrollbar {
@@ -23,16 +81,30 @@
     src: url(../Police/PoiretOne-Regular.ttf);
 } 
 
+/* Mise En Forme */
+
 body{
     overflow-y: hidden;
 }
 
-.propos{
-    color: #fff;
-    font-size: 29px;
-    font-weight: 500;
-    position: absolute;
-    right: 3%;
+.container{
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+
+/* Page Accueil CountryCars */
+
+.accueil{
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  border-bottom: #000 1px solid; 
+  justify-content: center;
+  height: 100vh;
+  scroll-snap-align: center;
+  background-color: rgb(201, 199, 199);
 }
 
 .description{
@@ -43,69 +115,130 @@ body{
 
 .texte{
   text-align: center;
-  margin-left: 20px;
-}
-
-.container{
-    height: 100vh;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
+  margin-left: 8vh;
 }
 
 .titre{
   text-align: center;
 }
 
-.accueil{
-    font-size: 50px;
-    display: flex;
-    align-items: center;
-    border-bottom: #000 1px solid; 
-    justify-content: center;
-    height: 100vh;
-    scroll-snap-align: center;
-    background-color: rgb(201, 199, 199);
-    background-size: cover;
-    background-position: center;
-    flex-wrap: nowrap;
+/* carousel */
+
+.slider1{
+  width: 800px;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-left: 15vh;
 }
 
-.allemagne{
-  font-size: 50px;
+.slides{
+width: 500%;
+height: 500px;
+display: flex;
+}
+
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img{
+  width: 800px;
+  height: 500px;
+}
+
+.navigation-mannual{
+  width: 800px;
+  margin-top: -40px;
   display: flex;
-  align-items: center;
-  border-bottom: #000 1px solid; 
   justify-content: center;
-  height: 100vh;
-  scroll-snap-align: center;
-  background-color: rgb(201, 199, 199);
-  background-size: cover;
-  background-position: center;
-}
-.containerJapon{
-    font-size: 50px;
-    display: flex;
-    border-bottom: #000 1px solid; 
-    height: 100vh;
-    scroll-snap-align: center;
-    background-image: url("../Images/japon.jpg");
-    background-size: cover;
-    background-position: center;
-    justify-content: space-evenly;
-    align-items: center;
 }
 
-.containerItalie{
+.mannual-btn{
+  border: 2px solid #ccc;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.mannual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.mannual-btn:hover{
+  background-color: #ccc;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+
+.navigation-auto{
+  display: flex;
+  width: 800px;
+  justify-content: center;
+  margin-top: 460px;
+}
+
+.navigation-auto div{
+  border: 2px solid #333;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~.navigation-auto .auto-btn-1{
+  background: #ccc;
+}
+
+#radio2:checked ~.navigation-auto .auto-btn-2{
+  background: #ccc;
+}
+
+
+#radio3:checked ~.navigation-auto .auto-btn-3{
+  background: #ccc;
+}
+
+#radio4:checked ~.navigation-auto .auto-btn-4{
+  background: #ccc;
+}
+
+/* Page Japon */
+
+.containerJapon{
   font-size: 50px;
   display: flex;
   border-bottom: #000 1px solid; 
   height: 100vh;
   scroll-snap-align: center;
+  background-image: url("../Images/japon.jpg");
   background-size: cover;
   background-position: center;
   justify-content: space-evenly;
   align-items: center;
-  background-image: url("../Images/france.jpg");
 }
 
 .japon1{
@@ -211,221 +344,22 @@ body{
   font-size: 90px;
 }
 
+/* Page Allemagne */
 
-/* carousel */
-
-.slider1{
-    width: 800px;
-    height: 500px;
-    border-radius: 10px;
-    overflow: hidden;
-    margin-left: 15vh;
-  }
-  
-.slides{
-  width: 500%;
-  height: 500px;
+.containerAllemagne{
+  font-size: 50px;
   display: flex;
+  align-items: center;
+  border-bottom: #000 1px solid; 
+  justify-content: center;
+  height: 100vh;
+  scroll-snap-align: center;
+  background-color: rgb(201, 199, 199);
 }
-  
-  .slides input{
-    display: none;
-  }
-  
-  .slide{
-    width: 20%;
-    transition: 2s;
-  }
-  
-  .slide img{
-    width: 800px;
-    height: 500px;
-  }
-  
-  .navigation-mannual{
-    width: 800px;
-    margin-top: -40px;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .mannual-btn{
-    border: 2px solid #ccc;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-  }
-  
-  .mannual-btn:not(:last-child){
-    margin-right: 40px;
-  }
-  
-  .mannual-btn:hover{
-    background-color: #ccc;
-  }
-  
-  #radio1:checked ~ .first{
-    margin-left: 0;
-  }
-  
-  #radio2:checked ~ .first{
-    margin-left: -20%;
-  }
-  
-  #radio3:checked ~ .first{
-    margin-left: -40%;
-  }
-  
-  #radio4:checked ~ .first{
-    margin-left: -60%;
-  }
-  
-  .navigation-auto{
-    display: flex;
-    width: 800px;
-    justify-content: center;
-    margin-top: 460px;
-  }
-  
-  .navigation-auto div{
-    border: 2px solid #333;
-    padding: 5px;
-    border-radius: 10px;
-    transition: 1s;
-  }
-  
-  .navigation-auto div:not(:last-child){
-    margin-right: 40px;
-  }
-  
-  #radio1:checked ~.navigation-auto .auto-btn-1{
-    background: #ccc;
-  }
-  
-  #radio2:checked ~.navigation-auto .auto-btn-2{
-    background: #ccc;
-  }
-  
-  
-  #radio3:checked ~.navigation-auto .auto-btn-3{
-    background: #ccc;
-  }
-  
-  #radio4:checked ~.navigation-auto .auto-btn-4{
-    background: #ccc;
-  }
-  
+
   /* carousel */
 
-.slider2{
-    width: 800px;
-    height: 500px;
-    border-radius: 10px;
-    overflow: hidden;
-    margin-right: 15vh;
-  }
 
-
-  .slides{
-    width: 500%;
-    height: 500px;
-    display: flex;
-  }
-    
-    .slides input{
-      display: none;
-    }
-    
-    .slide{
-      width: 20%;
-      transition: 2s;
-    }
-    
-    .slide img{
-      width: 800px;
-      height: 500px;
-    }
-    
-    .navigation-mannual{
-      width: 800px;
-      margin-top: -40px;
-      display: flex;
-      justify-content: center;
-    }
-    
-    .mannual-btn{
-      border: 2px solid #ccc;
-      padding: 5px;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: 1s;
-    }
-    
-    .mannual-btn:not(:last-child){
-      margin-right: 40px;
-    }
-    
-    .mannual-btn:hover{
-      background-color: #ccc;
-    }
-    
-    #radio1:checked ~ .first{
-      margin-left: 0;
-    }
-    
-    #radio2:checked ~ .first{
-      margin-left: -20%;
-    }
-    
-    #radio3:checked ~ .first{
-      margin-left: -40%;
-    }
-    
-    #radio4:checked ~ .first{
-      margin-left: -60%;
-    }
-    
-    .navigation-auto{
-      display: flex;
-      width: 800px;
-      justify-content: center;
-      margin-top: 460px;
-    }
-    
-    .navigation-auto div{
-      border: 2px solid #333;
-      padding: 5px;
-      border-radius: 10px;
-      transition: 1s;
-    }
-    
-    .navigation-auto div:not(:last-child){
-      margin-right: 40px;
-    }
-    
-    #radio1:checked ~.navigation-auto .auto-btn-1{
-      background: #ccc;
-    }
-    
-    #radio2:checked ~.navigation-auto .auto-btn-2{
-      background: #ccc;
-    }
-    
-    
-    #radio3:checked ~.navigation-auto .auto-btn-3{
-      background: #ccc;
-    }
-    
-    #radio4:checked ~.navigation-auto .auto-btn-4{
-      background: #ccc;
-    }  
-
-    
-    .container2 {
-      padding: 2rem;
-    }
-    
     .slider-wrapper2 {
       position: relative;
       max-width: 48rem;
@@ -433,6 +367,8 @@ body{
     }
     
     .slider2 {
+      width: 800px;
+      height: 500px;
       display: flex;
       overflow-x: auto;
       scroll-snap-type: x mandatory;
@@ -476,26 +412,38 @@ body{
       opacity: 1;
     }
 
+    /* Page Italie */
 
-    .france1{
+    .containerItalie{
+      font-size: 50px;
+      display: flex;
+      border-bottom: #000 1px solid; 
+      height: 100vh;
+      scroll-snap-align: center;
+      background-size: cover;
+      background-position: center;
+      justify-content: space-evenly;
+      align-items: center;
+      background-image: url("../Images/france.jpg");
+    }
+    .italie1{
       height: 300px;
       width: 400px;
       border-radius: 2rem;
       margin-top: 10vh;
       overflow-y: hidden;
       overflow-x: hidden;
-    }
-    
-    .france1:hover{
+    } 
+    .italie1:hover{
       transform: scale(1.1);
       transition: 0.5s;
     }
     
-    .france1:not(:hover){
+    .italie1:not(:hover){
       transition: 0.5s;
     }
     
-    .france1 .text {
+    .italie1 .text {
       display: none;
       position: absolute;
       top: 50%;
@@ -504,14 +452,14 @@ body{
       text-align: center;
     }
     
-    .france1:hover .text {
+    .italie1:hover .text {
       display: block;
       color: white;
       font-weight: 600;
       font-size: 90px;
     }
     
-    .france2{
+    .italie2{
       height: 300px;
       width: 400px;
       border-radius: 2rem;
@@ -520,16 +468,16 @@ body{
       overflow-x: hidden;
     }
     
-    .france2:hover{
+    .italie2:hover{
       transform: scale(1.1);
       transition: 0.5s;
     }
     
-    .france2:not(:hover){
+    .italie2:not(:hover){
       transition: 0.5s;
     }
     
-    .france2 .text {
+    .italie2 .text {
       display: none;
       position: absolute;
       top: 50%;
@@ -538,14 +486,14 @@ body{
       text-align: center;
     }
     
-    .france2:hover .text {
+    .italie2:hover .text {
       display: block;
       color: white;
       font-weight: 600;
       font-size: 90px;
     }
     
-    .france3{
+    .italie3{
       height: 300px;
       width: 400px;
       border-radius: 2rem;
@@ -554,16 +502,16 @@ body{
       overflow-x: hidden;
     }
     
-    .france3:hover{
+    .italie3:hover{
       transform: scale(1.1);
       transition: 0.5s;
     }
     
-    .france3:not(:hover){
+    .italie3:not(:hover){
       transition: 0.5s;
     }
     
-    .france3 .text {
+    .italie3 .text {
       display: none;
       position: absolute;
       top: 50%;
@@ -572,99 +520,15 @@ body{
       text-align: center;
     }
     
-    .france3:hover .text {
+    .italie3:hover .text {
       display: block;
       color: white;
       font-weight: 600;
       font-size: 90px;
     }
-
-    .photo1:hover{
-      transform: scale(1.1);
-      transition: 0.5s;
-    }
-
-    .photo1:not(:hover){
-      transition: 0.5s;
-    }
-
-    .photo2:not(:hover){
-      transition: 0.5s;
-    }
-
-    .photo2:hover{
-      transform: scale(1.1);
-      transition: 0.5s;
-    }
-
-    .photo3:hover{
-      transform: scale(1.1);
-      transition: 0.5s;
-    }
-
-    .photo3:not(:hover){
-      transition: 0.5s;
-    }
-
-    /* Variables */
-:root {
-	--font-size:1rem;
-  }
-  .dark-mode {
-	--navbar-color: #FFF;
-	--navbar-bg-color: #000;  
-  }
   
-  /* Reset */
-  ul {
-	list-style:none;
-  }
   
-  .main-content {
-	padding:1rem;
-  }
-  
-  /* Navbar */
-  .logo-title {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 8px;
-    padding-top: 8px;
-    padding-right: 30px;
-    color: white ;
-    font-size: 32px ;
-}
-  .navbar {  
-	display:flex;
-	align-items:center; 
-	justify-content:flex-start;   
-	padding:20px;
-	font-size:1.1rem;
-	background:var(--navbar-bg-color);
-	color:var(--navbar-color);
-  width: 100%;
-  position: fixed;
-  z-index: 99;
-  }
-  .navbar__links { 
-	display:flex;  
-  }
-  .navbar__link { 
-	padding:0 20px;
-  margin-top: 1%;
-  }
-  .navbar__link > a { 
-	color:var(--navbar-color);
-	text-decoration:none;
-  }
-  .burger {
-	display:none;
-  }
-  .Btn{
-	font-size: 1.38rem;
-  }
-  
-  /*  Small device */
+  /*  Media petit écran */
   @media screen and (max-width:767.98px) {
 	.navbar__links { 
 	  overflow:hidden;
@@ -704,7 +568,7 @@ body{
 	  letter-spacing:5px;
 	}
 	
-	/* Toggle menu */
+	/* Menu Burger */
 	.burger {
 	  display:block;
 	  position:relative;
@@ -750,7 +614,6 @@ body{
 	  transform:rotate(-45deg);
 	}
 	
-	/* Bonus - Animations */
 	.show-nav .first {      
 	  transition: all 1s ease-out;
 	} 
@@ -766,9 +629,15 @@ body{
 	.show-nav .fifth {      
 	  transition: all 1.4s ease-out;
 	}
+
+  .description.description{
+    font-size: 30px;
+    font-weight: 590;
+    text-align: center;
+}
+
   }
-  
-  /*  Medium device - Bonus */
+
   @media screen and (min-width:768px) {
 	.navbar__link > a::after {
 	  display:block;
@@ -782,8 +651,10 @@ body{
 	  width:100%;
 	}
   }
-  
-  /* bonus */
   .main-content, #section2 {
 	height:100vh;
+  }
+
+  .aCountry{
+    text-decoration: none;
   }

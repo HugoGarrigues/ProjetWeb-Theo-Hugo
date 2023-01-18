@@ -77,6 +77,9 @@ body{
     text-align: center;
 }
 
+
+
+
 .caracteristiques{
   font-size: 50px;
   display: flex;
@@ -89,17 +92,6 @@ body{
   background-position: center;
 }
 
-.gallerie{
-  font-size: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  scroll-snap-align: center;
-  background-color: rgb(201, 199, 199);
-  background-size: cover;
-  background-position: center;
-}
 
 .slider1{
     width: 800px;
@@ -403,4 +395,8 @@ body{
     /* bonus */
     .main-content, #section2 {
     height:100vh;
+    }
+
+    .aCountry{
+      text-decoration: none;
     }
