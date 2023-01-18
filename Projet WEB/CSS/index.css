@@ -364,6 +364,8 @@ display: flex;
       position: relative;
       max-width: 48rem;
       margin: 0 auto;
+      overflow-y: hidden;
+      overflow-x: hidden;
     }
     
     .slider2 {
@@ -377,6 +379,8 @@ display: flex;
       border-radius: 0.5rem;
       -ms-overflow-style: none; 
       scrollbar-width: none; 
+      overflow-y: hidden;
+      overflow-x: hidden;
     }
     
     .slider2::-webkit-scrollbar {
