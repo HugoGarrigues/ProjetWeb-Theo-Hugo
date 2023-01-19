@@ -5,7 +5,15 @@ Notre site présente des informations détaillées sur les différents modèles 
 
 Ce projet a été demandé par des clients et nous avons mis tout notre savoir-faire pour répondre à leurs attentes. Nous espérons que ce site web vous plaira et que vous y trouverez les informations que vous recherchez.
 
-# Technologie utilisées
-HTML
-CSS
-JavaScript
+## Navigation
+La page d'accueil de notre site sert de point d'entrée pour les utilisateurs. Elle présente les différentes catégories de voitures que nous avons décidé de mettre en avant. En cliquant sur l'une d'entre elles, l'utilisateur est redirigé dans la page vers cette catégorie. Il peut alors naviguer entre les différentes voitures de cette catégorie, et accéder à leurs fiches détaillées.
+
+## Auteurs
+* **Theo COLLIOT-MARTINEZ** - *Développement* 
+
+* **Hugo GARRIGUES** - *Développement* 
+
+
+
+## Technologie utilisées
+HTML, CSS et JavaScript
