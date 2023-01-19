@@ -14,6 +14,5 @@ La page d'accueil de notre site sert de point d'entrée pour les utilisateurs. E
 * **Hugo GARRIGUES** - *Développement* 
 
 
-
 ## Technologie utilisées
 HTML, CSS et JavaScript
